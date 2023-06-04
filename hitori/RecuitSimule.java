@@ -1,7 +1,11 @@
+package hitori;
+
+import hitori.HitoriBoard;
+
 import java.util.Random;
 
 /**
- * Classe RecuitSimule utilisant l'algorithme du recuit simulé pour résoudre le jeu Hitori.
+ * Classe hitori.RecuitSimule utilisant l'algorithme du recuit simulé pour résoudre le jeu Hitori.
  */
 class RecuitSimule {
     private final double coolingFactor;         // Taux de décroissance de la température
@@ -10,7 +14,7 @@ class RecuitSimule {
       // Température de réinitialisation
 
     /**
-     * Constructeur de la classe RecuitSimule.
+     * Constructeur de la classe hitori.RecuitSimule.
      *
      * @param coolingFactor         Taux de décroissance de la température. Doit être inférieur à 1 et proche de 1.
      * @param initialTemperature    Température initiale. Plus elle est élevée, plus les solutions seront variées en début de résolution.

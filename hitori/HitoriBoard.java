@@ -1,3 +1,5 @@
+package hitori;
+
 import java.util.*;
 
 class HitoriBoard {
@@ -12,7 +14,7 @@ class HitoriBoard {
     private List<int[]> doublons;
 
     /**
-     * Construit une nouvelle instance de HitoriBoard avec la grille fournie.
+     * Construit une nouvelle instance de hitori.HitoriBoard avec la grille fournie.
      * Initialise la variable gridHitori avec la grille donnée et
      * appelle la méthode initialisationDoublons(). pour initialiser les doublons
      *

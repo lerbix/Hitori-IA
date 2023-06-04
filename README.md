@@ -8,16 +8,16 @@ Hitori est un puzzle logique japonais sur une grille de nombres. **Objectif** : 
 
 Le problème du Hitori est résolu en utilisant une grille bidimensionnelle qui représente le plateau de jeu Hitori. Chaque case de la grille contient un nombre entier, les cases noircies étant représentées par des valeurs négatives.
 
-La classe HitoriBoard définit la structure de la grille Hitori et fournit un certain nombre de méthodes pour gérer la grille, telles que vérifier la validité d'une solution Hitori, calculer le score d'adéquation (fitness) de la grille et effectuer des transformations sur la grille (comme cocher une case).
+La classe hitori.HitoriBoard définit la structure de la grille Hitori et fournit un certain nombre de méthodes pour gérer la grille, telles que vérifier la validité d'une solution Hitori, calculer le score d'adéquation (fitness) de la grille et effectuer des transformations sur la grille (comme cocher une case).
 
-La classe RecuitSimule utilise l'algorithme du recuit simulé pour résoudre le jeu Hitori. L'algorithme du recuit simulé est une technique d'optimisation qui vise à trouver la meilleure solution possible en explorant l'espace des solutions et en acceptant les solutions qui améliorent la "fitness" ou la qualité de la solution.
+La classe hitori.RecuitSimule utilise l'algorithme du recuit simulé pour résoudre le jeu Hitori. L'algorithme du recuit simulé est une technique d'optimisation qui vise à trouver la meilleure solution possible en explorant l'espace des solutions et en acceptant les solutions qui améliorent la "fitness" ou la qualité de la solution.
 ## Structures de données
 Les principales structures de données utilisées sont un tableau 2D d'entiers et une List
 ```java
-class HitoriBoard {
+class hitori.HitoriBoard {
     int[][] gridHitori;
     List<int[]> doublons;
-    // reste du code... voir la classe HitoriBoard
+    // reste du code... voir la classe hitori.HitoriBoard
 }
 ```
 `gridHitori` cette matrice est utilisée pour représenter la grille de jeu Hitori, avec chaque élément de la matrice représentant une case de la grille. Les valeurs négatives dans la matrice représentent les cases qui sont cochées.
